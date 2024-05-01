@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bt1.css">
+    <title>Document</title>
+</head>
+ <!-- Đây là hướng dẫn chia layout bằng flexbox, có nhiều cách để chia nhưng anh thì hay xài cách này. -->
+ <!-- Cách này dễ kiểm tra được phần tử khi gặp lỗi. Các bạn có thể áp dụng trong nhiều trường hợp khác nhau theo đề.   -->
+ <!-- Các bạn nên học cách chia layout để đơn giản hóa code, nó giống như kiểu chia để trị á. Giảm thiểu css -->
+<body>
+    <div class="container">
+        <h1 class="title">EMXAMPLE CAFE MENU</h1>
+        <div class="container_header">
+            <div class="header">
+                <img src="Bai1/icons8-home-50.png" id="icon_home" alt="">
+                <char id="char1">|</char>
+                <start id="stater">
+                    STARTER
+                </start>
+                <char id="char1">|</char>
+                <mainn id="main">
+                    MAIN COURSES
+                </mainn>
+                <char id="char1">|</char>
+                <der id="der">
+                    DERSSERTS
+                </der>
+                <char id="char1">|</char>
+                <input type="text" id="box_search" placeholder="Search...">
+                <button type="reset" id="go">Go</button>
+            </div>
+
+        </div>
+
+        <div class="container_center">
+
+            <div class="left">
+                <div class="bar">
+                    <div class="cafe">Cafe Latte</div>
+                    <div class="capuchino">Capochino</div>
+                    <div class="ocean">Ocean Blue</div>
+                    <div class="ice_cream">Ice-cream Cafe</div>
+                    <div class="order">Order Online</div>
+                </div>
+
+                <img src="/Bai1/company.png" alt="" id="image">
+                
+            </div>
+
+            <div class="center">
+                <div class="center_header">
+                    <div class="sta_des_in">
+                        <p id="start">Starter</p>
+                    </div>
+
+                    <ul>
+                        <li>Chesnut and Mushroom Goujons <v>(v)</v></li>
+                        <li>Goat Cheese <v>(v)</v></li>
+                        <li id="honey">HONEY SOY CHICKEN KEBABS <v>(V)</v></li>
+                        <li>Seafood Salad <v>(v)</v></li>
+                    </ul>
+                    <p class="back">Back to Top</p>
+
+                    <div class="sta_des_in">
+                        <p id="start">Desserts</p>
+                    </div>
+
+                    <ul>
+                        <li>Lemon Sorbet <v>(v)</v></li>
+                        <li>Chocolate Mud Pie <v>(v)</v></li>
+                        <li>Pecan Pie <v>(v)</v></li>
+                        <li>Selection of line Cheeses from Around the World <v>(v)</v></li>
+                    </ul>
+                    <p class="back">Back to Top</p>
+
+                    <div class="sta_des_in">
+                        <p id="start">INFORMATION</p>
+                    </div>
+
+                    <div class="input">
+                        <input type="text" placeholder="Firt Name" id="firt_name">
+                        <input type="text" placeholder="Last Name" id="last_name"><br>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="number" placeholder="Telephone" id="telephone"><br>
+                        <select name="select" id="select">
+                            <option value="1">USA</option>
+                            <option value="2" selected>VIETNAM</option>
+                            <option value="3">ENGLISH</option>
+                        </select>
+                        <input type="radio" name="Vietnam" id="vietnamese">
+                        <label for="vietnamese">Vietnamese</label>
+                        <input type="radio" name="Vietnam" id="foreigner">
+                        <label for="foreigner">Foreigner</label><br>
+                        <textarea name="cmt" id="cmt" cols="92" rows="3">Comment</textarea>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="right">
+                <p class="events">Events</p>
+                <div class="right_header">
+                    <h3>Regular Meetings</h3>
+                    <img src="/Bai1/meeting.png" alt="" class="right_img">
+                    <p class="paragraph">Host your regular team meetings or activities in the comfort of your own private room. <a href="">Read more...</a></p>
+                    <h3>Product Launches</h3>
+                    <img src="/Bai1/launch.png" alt="" class="right_img">
+                    <p class="paragraph">Launche your product with ease in a space that truly fits its image. <a href="">Read more...</a></p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="bottom">
+            <h2>
+                ABC Company
+                <icon class="icon">c</icon>
+                - 12345678 - abccoffee@gmail.com 
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>
